@@ -1,0 +1,1 @@
+Diversidade léxica geral do dataset: 0.112, com isso 11.2%
