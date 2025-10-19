@@ -1,20 +1,65 @@
-# Diversidade_Léxica
-Este projeto da minha iniciação científica no IFES cria ferramentas em Python para análise automática de textos. Ele calcula a diversidade lexical de cada arquivo de um dataset criado pela professora Marta com ChatGPT Turbo 4 e da base completa, registrando os resultados em .txt para estudos linguísticos e desenvolvimento de corretores automáticos.
+# 📊 Análise de Textos - Diversidade e Complexidade
 
-# Corretor Automático – Análise de Diversidade Lexical
+Ferramenta simples para analisar a qualidade e complexidade de textos em português.
 
-Este repositório contém scripts em Python desenvolvidos para a minha **Iniciação Científica no IFES**, com foco em análise automática de textos e diversidade lexical.
+## 🎯 O que faz?
 
-## Objetivo
+Analisa textos e calcula:
 
-O projeto tem como objetivo principal:
+- **Diversidade Léxica**: Quantas palavras diferentes são usadas
+- **Complexidade**: Se o vocabulário é simples ou avançado  
+- **Padrões Silábicos**: Estrutura das palavras
 
-- Ler arquivos de texto de um dataset fornecido.
-- Calcular a **diversidade lexical** de cada arquivo individualmente.
-- Calcular a diversidade lexical da base de dados completa.
-- Salvar os resultados em um arquivo `.txt` para análise posterior.
+## 🚀 Como usar?
 
-## Dataset
+```python
+# Basta executar o script
+python Codigo_IC_diversidadeLexica.py
+```
 
-O dataset foi criado pela professora Marta utilizando **ChatGPT Turbo 4**. Cada arquivo contém textos que serão analisados.
+O programa vai:
+1. Ler arquivos JSON da pasta configurada
+2. Analisar cada texto
+3. Gerar relatórios com os resultados
 
+## 📊 Resultados
+
+### Para cada arquivo:
+```
+Diversidade Léxica: 85.8%  ✅ (Quanto maior, melhor)
+Complexidade: 27.4% - Média  📊
+Palavras Longas: 30.0%  🔤
+Sílabas por Palavra: 2.97  📝
+```
+
+### Resumo geral:
+- ✅ **Diversidade Alta**: Textos com vocabulário variado
+- 📊 **Complexidade Média**: Nem simples, nem complicado demais
+- 🔄 **Consistente**: Resultados similares entre textos
+
+## 📁 Arquivos necessários
+
+Coloque os arquivos JSON na pasta:
+```
+C:/Users/Maxine/Downloads/IC/ChatgptTurbo/
+```
+
+Estrutura do JSON:
+```json
+{
+  "comando_tematico": {
+    "texto": "Seu texto aqui..."
+  }
+}
+```
+
+## 💡 Ideal para
+
+- Analisar redações e textos
+- Pesquisas em linguística  
+- Comparar estilos de escrita
+- Estudos sobre IA e geração de texto
+
+---
+
+*Ferramenta desenvolvida para análise linguística computacional*
